@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ONE PIECE</title>
+</head>
+<body>
+    <header class="menu">
+        <img src="img/one-piece.png" alt="one-piece" class="logo">
+    </header>
+    
+    <div class="parent-container">
+        <div class="container">
+        <h1>Filtro de Lista</h1>
+        <input type="text" id="filterInput" placeholder="Digite para filtrar...">
+        <ul id="itemsList">
+            <li data-id="1">Chapéu de Palha</li>
+            <li data-id="2">Barba Branca</li>
+            <li data-id="3">Big Mom</li>
+            <li data-id="4">Piratas das Feras</li>
+            <li data-id="5">Barba Negra</li>
+            <li data-id="6">Piratas do Ruivo</li>
+            <li data-id="7">Piratas do Sol</li>
+            <li data-id="8">Piratas do Coração</li>
+        </ul>
+    </div>
+    <div id="contentBox" class="content-box hidden">
+        <div id="content1" class="content hidden">
+            <h2>Chapéu de Palha</h2>
+            <p>Liderada por Monkey D. Luffy, é a tripulação principal da série.</p>
+            <div class="card">
+                <div class="tripulantes">
+                    <img src="img/luffy.png" alt="" class="tripulante">
+                    <h2 class="nome-tripulante">Monkey D. Luffy<br> <span class="quebra-linha">Luffy é um jovem destemido que quer se tornar o Rei dos Piratas. Ele parte em uma jornada com sua tripulação, os Chapéus de Palha, para encontrar o lendário tesouro One Piece. Ao longo do caminho, ele enfrenta desafios, faz amigos e desafia o Governo Mundial. Sua determinação e natureza altruística o tornam um protagonista cativante em "One Piece".</span></h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="tripulantes">
+                    <img src="img/zoro.png" alt="" class="tripulante">
+                    <h2 class="nome-tripulante">Roronoa Zoro<br> <span class="quebra-linha">Zoro é um espadachim habilidoso que se junta aos Piratas do Chapéu de Palha em sua busca pelo tesouro lendário, One Piece. Determinado a se tornar o maior espadachim do mundo, ele enfrenta desafios, aprimora suas habilidades e desenvolve laços fortes com seus companheiros de tripulação, especialmente com Luffy. Sua lealdade e habilidades de combate o tornam um dos personagens mais marcantes de "One Piece".</span></h2>
+                </div>
+            </div>
+            <button id="openModal">Ver Tabela</button>
+
+            
+            <div id="myModal" class="modal">
+            
+              
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <table border="1">
+                  <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Origem da Ilha</th>
+                    <th>Valor de Recompensa</th>
+                  </tr>
+                  <tr>
+                    <td ><img src="img/luffy.png" alt="luffy" class="foto"></td>
+                    <td>Luffy</td>
+                    <td>East Blue</td>
+                    <td>1.500.000.000 Berries</td>
+                  </tr>
+                  <tr>
+                    <td ><img src="img/zoro.png" alt="Zoro" class="foto"></td>
+                    <td>Zoro</td>
+                    <td>East Blue</td>
+                    <td>320.000.000 Berries</td>
+                  </tr>
+                </table>
+              </div>
+            
+            </div>
+
+        <div id="content2" class="content hidden">
+            <h2>Barba Branca</h2>
+            <p> Liderada por Edward Newgate, também conhecido como Barba Branca.</p>
+        </div>
+        <div id="content3" class="content hidden">
+            <h2>Big Mom</h2>
+            <p> Liderada por Charlotte Linlin, também conhecida como Big Mom.</p>
+        </div>
+        <div id="content4" class="content hidden">
+            <h2>Piratas das Feras</h2>
+            <p>Liderada por Kaido.</p>
+        </div>
+        <div id="content5" class="content hidden">
+            <h2>Barba Negra</h2>
+            <p>Liderada por Marshall D. Teach, conhecido como Barba Negra.</p>
+        </div>
+        <div id="content6" class="content hidden">
+            <h2>Piratas do Ruivo</h2>
+            <p>Liderada por Shanks, o Ruivo.</p>
+        </div>
+        <div id="content7" class="content hidden">
+            <h2>Piratas do Sol</h2>
+            <p>Originalmente liderada por Fisher Tiger e depois por Jinbe.</p>
+        </div>
+        <div id="content8" class="content hidden">
+            <h2>Piratas do Coração</h2>
+            <p>Liderada por Trafalgar D. Water Law.</p>
+        </div>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
