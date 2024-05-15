@@ -34,6 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    Array.from(items).forEach(function(item) {
+        item.addEventListener('click', function() {
+            const contentId = item.getAttribute('data-id');
+            showContent(contentId);
+        });
+    });
+
     function showContent(id) {
         contents.forEach(function(content) {
             content.classList.add('hidden');
@@ -42,7 +49,15 @@ document.addEventListener('DOMContentLoaded', function() {
         contentToShow.classList.remove('hidden');
         contentBox.classList.remove('hidden');
     }
+
+    contentBox.addEventListener('click', function() {
+        contentBox.classList.add('hidden');
+        contents.forEach(function(content) {
+            content.classList.add('hidden');
+        });
+    });
 });
+
 
 
 
