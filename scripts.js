@@ -1,5 +1,5 @@
-// scripts.js
 document.addEventListener('DOMContentLoaded', function() {
+
     const filterInput = document.getElementById('filterInput');
     const itemsList = document.getElementById('itemsList');
     const items = itemsList.getElementsByTagName('li');
@@ -42,6 +42,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function showContent(id) {
+        const personMsg = {
+            1: "Chapeu de palha",
+            2: "Barba Branca",
+            3: "Big Mom",
+            4: "Piratas das Feras",
+            5: "Barba Negra",
+            6: "Piratas do Ruivo",
+            7: "Piratas do Sol",
+            8: "Piratas do Coração",
+        }
+
+        const personcolor =[ {
+            1: "red",
+            2: "blue",
+            3: "pink",
+            4: "yellow",
+            5: "black",
+            6: "orange",
+            7: "#6abce2",
+            8: "#d29e00",
+        },
+    {
+        1: "#ee6b6e",
+    }]
+
+
+
+        Toastify({
+              text: ` ${personMsg[id]}`,
+            style: {
+                background: `${personcolor[1][id]}`,
+                marginTop: "100px",
+                borderBottom: `2px solid ${personcolor[0][id]}` ,
+                color:` ${personcolor[0][id]}` ,      
+              },
+
+
+            duration: 1500,
+            close: true,
+        }).showToast();
         contents.forEach(function(content) {
             content.classList.add('hidden');
         });
@@ -51,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     contentBox.addEventListener('click', function() {
+       
         contentBox.classList.add('hidden');
         contents.forEach(function(content) {
             content.classList.add('hidden');
@@ -81,3 +122,4 @@ document.addEventListener('DOMContentLoaded', function() {
       modal.style.display = "none";
     }
   }
+
