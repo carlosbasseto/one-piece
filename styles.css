@@ -37,7 +37,7 @@ body{
 }
 
 .container, .content-box {
-    background: #fff;
+    border: 2px solid ;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -48,6 +48,7 @@ body{
 .content-box h2, p{
     width: 700px;
     text-align: center;
+    color: white;
 }
 
 .content-box {
@@ -262,9 +263,7 @@ img {
                 transparent 4%, 
                 transparent 4.1%);
 
-    @media screen and (max-width: 550px) {
-        padding: 0 .2rem;
-    }
+   
 }
 
 .img__team {
@@ -345,4 +344,8 @@ img {
     right: 0;
     bottom: 0;
     height: 5%;
+}
+
+.personagens{
+    height: 300px;
 }
